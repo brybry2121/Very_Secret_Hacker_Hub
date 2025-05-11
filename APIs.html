@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIs Exercise</title>
+    <link rel="stylesheet" href="APIs.css">
+</head>
+<body>
+    <main>
+        <h1>Very Secret Hacker Hub</h1>
+        <section>
+            <h2>System</h2>
+            <div>
+                <h3>Login</h3>
+                <form id="login-form">
+                    <label for="email-input">Your Secret Email:</label>
+                    <input id="email-input" type="email" required>
+                    <label for="password-input">Your Secret Password:</label>
+                    <input id="password-input" type="password" required>
+                    <button type="submit">Infiltrate</button>
+                </form>
+            </div>
+            <div>
+                <h3>Logout</h3>
+                <button id="logout-button">Sneak Away</button>
+            </div>
+            <div id="system-message" class="container"></div>
+        </section>
+        <section>
+            <h2>Gather Intelligence</h2>
+            <div>
+                <form id="intelligence-form">
+                    <label for="page-number-input">Page Number:</label>
+                    <input id="page-number-input" type="number" min="1" required>
+                    <button type="submit">Fetch Hackers</button>
+                </form>
+            </div>
+            <div id="hackers" class="container"></div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="APIs.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+.container {
+  margin: 10px 0px; /* Top and bottom margins */
+  padding: 20px; /* All-around padding */
+  border: thin solid black; /* Border styles */
+}
+
+h1, h2, h3 {
+  display: block;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+button {
+  appearance: auto;
+  text-rendering: auto;
+  font: normal medium inherit;
+  color: buttontext;
+  text-align: center;
+  display: inline-block;
+  cursor: default;
+  box-sizing: border-box;
+  background-color: buttonface;
+  margin: 0;
+  padding: 1px 6px;
+  border: 2px outset buttonborder;
+}
+
+label {
+  cursor: default;
+}
+
+input {
+  text-rendering: auto;
+  color: fieldtext;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  cursor: text;
+  background-color: field;
+  margin: 0;
+  padding: 1px 2px;
+  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  font: normal medium inherit;
+}
+
+input[type="password"] {
+  -webkit-text-security: disc !important; /* Hide password characters */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  padding: 1px 2px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+form, div, section, main {
+  display: block;
+  unicode-bidi: isolate;
+}
